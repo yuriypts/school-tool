@@ -10,7 +10,8 @@ export class AdminComponent implements OnInit {
 
   constructor(private readonly adminSrv: AdminService) { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+    const result = await this.adminSrv.getRooms();
+    console.log(result);
   }
-
 }

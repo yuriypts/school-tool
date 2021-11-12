@@ -1,0 +1,14 @@
+.form-block {
+  .input-block {
+    display: flex;
+    margin: 10px;
+
+    label {
+      flex: 30%;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+}

@@ -21,6 +21,10 @@
   }
 
   .admin-container {
+    .spinner-container {
+      height: 200px;
+    }
+
     .thead-container, .tbody-container {
       display: flex;
       justify-content: space-around;

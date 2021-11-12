@@ -4,3 +4,7 @@ export const NOTIFICATION_TYPES = {
   WARNING: 'warning',
   ERROR: 'error'
 };
+
+export const DATE_FORMATS = {
+  YYYYMMDDHHMM: 'YYYY/MM/DD HH:mm',
+};

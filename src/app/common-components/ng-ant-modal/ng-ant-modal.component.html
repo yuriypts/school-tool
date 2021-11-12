@@ -1,9 +1,27 @@
-{{ isVisible }}
 <nz-modal
   [(nzVisible)]="isVisible"
-  nzTitle="Modal Title"
+  nzTitle="Класc"
   (nzOnCancel)="handleCancel()"
   (nzOnOk)="handleOk()"
 >
-  <p *nzModalContent>Modal Content</p>
+  <div *nzModalContent>
+    <form [formGroup]="formGroup" class="form-block">
+      <div class="input-block">
+        <label>Назва Класса</label>
+        <input
+          placeholder="Назва класса"
+          formControlName="name"
+          required
+        >
+      </div>
+      <div class="input-block">
+        <label>Посилання</label>
+        <input
+          placeholder="Посилання"
+          formControlName="link"
+          required
+        >
+      </div>
+    </form>
+  </div>
 </nz-modal>

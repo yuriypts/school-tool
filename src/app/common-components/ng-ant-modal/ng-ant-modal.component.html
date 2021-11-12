@@ -1,0 +1,9 @@
+{{ isVisible }}
+<nz-modal
+  [(nzVisible)]="isVisible"
+  nzTitle="Modal Title"
+  (nzOnCancel)="handleCancel()"
+  (nzOnOk)="handleOk()"
+>
+  <p *nzModalContent>Modal Content</p>
+</nz-modal>

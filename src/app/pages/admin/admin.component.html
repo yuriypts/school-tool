@@ -1,3 +1,32 @@
 <div class="admin-wrapper">
-
+  <div class="add-room-container">
+    <div class="add-room" (click)="addRoom()">
+      Додати класс
+    </div>
+  </div>
+  <div class="admin-container">
+    <div class="thead-container">
+      <div class="item">Класс id</div>
+      <div class="item">Назва класса</div>
+      <div class="item">Посиллання</div>
+      <div class="item">Створенно посилання</div>
+      <div class="item">Оновлено посилання</div>
+      <div class="item">Видалити класс</div>
+      <div class="item">Редагувати класс</div>
+    </div>
+    <div class="tbody-container" *ngFor="let room of rooms">
+      <div class="item">{{ room.classId }}</div>
+      <div class="item">{{ room.name }}</div>
+      <div class="item">{{ room.link }}</div>
+      <div class="item">{{ room.createdAt }}</div>
+      <div class="item">{{ room.updatedAt }}</div>
+      <div class="item remove-room" (click)="removeRoom(room)">Видалити</div>
+      <div class="item edit-room" (click)="editRoom(room)">Редагувати</div>
+    </div>
+  </div>
 </div>
+<app-ng-ant-modal
+  [isVisible]="openModal"
+  (handleClick)="click($event)"
+>
+</app-ng-ant-modal>

@@ -1,0 +1,72 @@
+.admin-wrapper {
+  padding: 50px;
+
+  .add-room-container {
+    margin: 15px 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .add-room {
+      width: 150px;
+      background-color: #5050fb;
+      color: white;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .admin-container {
+    .thead-container, .tbody-container {
+      display: flex;
+      justify-content: space-around;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      align-items: center;
+      padding: 10px;
+
+      .item {
+        display: flex;
+        flex: 33%;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        margin: 0 10px;
+      }
+    }
+
+    .thead-container {
+      background-color: #009879;
+      color: #ffffff;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+
+    .tbody-container {
+      background-color: #f3f3f3;
+      color: #000000;
+
+      .remove-room, .edit-room {
+        border-radius: 10px;
+        cursor: pointer;
+        color: #ffffff;
+      }
+
+      .remove-room {
+        background-color: #ef3838;
+      }
+
+      .edit-room {
+        background-color: #2196f3;
+      }
+    }
+
+    .tbody-container:last-child {
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import ResizeObserver from 'resize-observer-polyfill';
 
 @Component({
   selector: 'app-root',
